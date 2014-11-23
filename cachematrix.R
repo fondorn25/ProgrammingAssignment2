@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+## makeCacheMatrix - creates original matrix and caches calculated value S (for solve())
 
 makeCacheMatrix <- function(x = matrix()) {
         ##value of S gets set to NULL when new matrix is created
@@ -24,6 +25,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+##cacheSolve fucntion - checks for previously calculated/cached value of S - if available pulls it
+##if value of S is null - new vaue is calculated
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
